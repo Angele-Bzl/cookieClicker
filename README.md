@@ -1,2 +1,2 @@
 # cookieClicker
-My first cookie clicker to learn the base of JavaScript
+My first cookie clicker to learn bases of JavaScript
