@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Cookie Clicker</title>
+        <script src="javascript.js"></script>
+        <link id= "css" href="style.css" rel="stylesheet">
+        <!-- Google fonts -->
+            <!-- monserrat--><link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+            <!-- manrope --><link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    </head>
+
+
+    <body>
+      <audio preload="auto" loop>
+        <source src="musique-jeu-short.wav" type="audio/ogg">
+      </audio>
+      <div class="modal" id="modal">
+        <div class="modal-back"></div>
+        <div class="modal-container">
+          Bonjour et bienvenue sur Cookie Clicker !<br>
+          Ici tu vas pouvoir gagner de l'argent en vendant des cookies.<br>
+          Clique sur le cookie pour voir.<br>
+          <a href="#" id="modal-close">OK</a>
+        </div>
+      </div>
+
+      <p id="score">0$</p>
+      <div id="nav">Menu</div>
+      <div id="cookie" onclick="cuisiner()"></div>
+      <div id="ameliorations">
+        <div class="up"><button id="four" onclick="acheterFour()">Nombre de four : 1 <br>Prix : 5$</button></div>
+        <div class="up"><button id="cuistot" onclick="acheterCuistot()">Nombre de cuistot : 0 <br>Prix : 5$</button></div>
+        <div class="up"><button id="pack" onclick="emprunter()">Emprunter 100$<br>Taux : 0%</button></div>
+        <div class="up"><button id="skin" onclick="changeSkin()">Changer la couleur</button></div>
+      </div>
+    </body>
+</html>
+
+
+<!-- COPIE COLLE NAV -->
+<!--<ul id="nav" class="drop">
+  <li><a href="#">Accueil</a></li>
+  <li>A propos
+    <ul>
+      <li><a href="#">Histoire</a></li>
+      <li><a href="#">Clients</a></li>
+      <li><a href="#">Testimonials</a></li>
+      <li><a href="#">Staff</a>
+        <ul>
+          <li><a href="#">George jungle</a>
+            <ul>
+              <li>Web Design</li>
+              <li>Graphic Design</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </li>
+          <li><a href="#">Leon trouvetout</a></li>
+        </ul>
+      </li>
+      <li><a href="#">FAQs</a></li>
+    </ul>
+  </li>
+  <li>Services
+    <ul>
+      <li><a href="#">Web Design</a></li>
+      <li><a href="#">Graphic Design</a></li>
+      <li><a href="#">Logo Design</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Gallerie</a></li>
+</ul>

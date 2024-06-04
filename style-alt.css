@@ -1,0 +1,82 @@
+*{
+    margin : 0;
+    padding: 0;
+}
+
+#score{
+    width: 100%;
+    padding : 5% 0 5% 0;
+    text-align: center;
+    background-color: darkorchid;
+    color: black;
+    font-family: manrope, sans-serif;
+}
+
+#cookie{
+   border-radius: 150px;
+   background-color: darkorchid; 
+   justify-content: auto;
+   width: 20em;
+   height: 20em; 
+   margin-left: auto;
+   margin-right: auto;
+   margin-top : 20px;
+   transition: 0.1s;
+}
+
+#cookie:active{
+    width: 22em;
+    height: 22em; 
+    opacity: 90%;
+}
+
+#ameliorations{
+    z-index: 500;
+    width: 100%;
+    padding : 5% 0 5% 0;
+    text-align: center;
+    background-color: rgb(192, 118, 229);
+    color: black;
+    font-family: manrope, sans-serif;
+    position: absolute;
+    bottom : 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+button{
+    background-color: darkorchid;
+    padding : 2em;
+    font-family: manrope, sans-serif;
+    border-radius: 10px;
+}
+
+
+/* TUTO */
+  
+  .modal {
+    display: none;
+  }
+  .modal-back {
+    z-index: 800;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba( 0, 0, 0, .25 );
+  }
+  .modal-container {
+    z-index: 1000;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: 25px;
+    background-color: rgb(192, 118, 229);
+    transform: translate(-50%, -50%);
+    font-family: manrope, sans-serif;
+    border: grey solid 1px;
+    border-radius: 10px;
+  }
